@@ -1,0 +1,23 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Черепашки-приключения</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="400"></canvas>
+        <div class="ui">
+            <div>🐚 <span id="treasureCount">0</span>/3</div>
+            <div id="gravityIndicator">🌍 норм
+         </div>
+            <div id="gravityTimer" style="display:none;">⏱️ <span id="gravityTime">0</span>с</div>
+            <div class="controls">← → | ↑ прыжок | у стены ↑ лазать</div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
