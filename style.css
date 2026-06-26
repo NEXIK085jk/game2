@@ -1,0 +1,57 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body {
+    background: #C2B280;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Comic Neue', 'Comic Sans MS', cursive, sans-serif;
+}
+.game-container {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.4);
+}
+canvas {
+    display: block;
+    background: #7ec8e0;
+    cursor: pointer;
+}
+.ui {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    display: flex;
+    gap: 16px;
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(8px);
+    padding: 8px 18px;
+    border-radius: 60px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-shadow: 1px 1px 0 black;
+    pointer-events: none;
+}
+.ui div {
+    background: rgba(0,0,0,0.5);
+    padding: 4px 14px;
+    border-radius: 40px;
+}
+.controls {
+    margin-left: auto;
+    font-size: 12px;
+    background: rgba(0,0,0,0.6);
+}
+@media (max-width: 700px) {
+    .controls { display: none; }
+    .ui { font-size: 13px; gap: 8px; }
+}
